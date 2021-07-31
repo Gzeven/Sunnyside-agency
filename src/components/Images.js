@@ -67,8 +67,6 @@ const Wrapper = styled.section`
   animation: slide 60s linear infinite;
   
 }
-
-
  .sliding-background-reverse {
    display: none;
  }

@@ -5,14 +5,14 @@ import {TransformDesktop, TransformMobile, StandOutDesktop, StandOutMobile, Grap
  const Info = () => {
     return <Wrapper>
           <div className="info info-transform">
-          <img src={TransformMobile} className="mobile-image" alt="" />
-          <img src={TransformDesktop} className="desktop-image"alt="" />
-          <div className="info-text">
-            <h2>Transform your brand</h2>
-            <p>We are a full-service creative agency specializing in helping brands grow fast. 
-            Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <button className="transform">Learn More</button>
-          </div> 
+            <img src={TransformMobile} className="mobile-image" alt="" />
+            <img src={TransformDesktop} className="desktop-image"alt="" />
+            <div className="info-text">
+              <h2>Transform your brand</h2>
+              <p>We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+              <button className="transform">Learn More</button>
+            </div> 
          </div>
          <div className="info">
             <img src={StandOutMobile} className="mobile-image" alt="" />
@@ -30,18 +30,13 @@ import {TransformDesktop, TransformMobile, StandOutDesktop, StandOutMobile, Grap
            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
         </div>
 
-           <div className="info-content photography ">
+         <div className="info-content photography ">
              <h3>Photography</h3>
              <p>Increase your credibility by getting the most stunning, high-quality photos that improve your    business image.</p>
-           </div>
+         </div>
         </div>
     </Wrapper>       
 }
-
-     
-     
-
-
 
 const Wrapper = styled.section`
 margin: 0 auto;
@@ -68,13 +63,14 @@ h2, p {
    padding-top: 3.556rem; 
    max-width: 300px;
   }
+ 
   p {
    color: var(--dark-grayish-blue); 
    max-width: 270px;
    padding-top: 1.333rem;
-    }
+ }
  
-   button {
+button {
       border: none;
       outline: none;
       font-family: "Fraunces";
@@ -87,7 +83,6 @@ h2, p {
       padding: 1.333rem 0 3.556rem;
       position: relative;
       cursor: pointer;
-      
            &::before {
             content: "";
             position: absolute;
@@ -98,26 +93,22 @@ h2, p {
             border-radius: 50px;
             opacity: .25;
             z-index: -1;
-            transition: var(--transition);
-            
+            transition: var(--transition);        
         }
-     :hover, :focus {
+      :hover, :focus {
         &::before {
-           opacity: 1;
-           
+           opacity: 1;       
         }
-     }
-    
+     }   
    }
      .transform {
-     &::before {
+        &::before {
             background-color: var(--yellow);
-        } 
+         } 
    }
-       .stand-out {
-     &::before {
+     .stand-out {
+        &::before {
             background-color: var(--soft-red);
-    
         } 
    }
 }
@@ -127,15 +118,14 @@ h2, p {
    flex-direction: column;
    text-align: center;
    height: 600px;
-   h3 {
+     h3 {
       padding-top: 22.111rem;
-   }
-   p {
+     }
+     p {
       padding-top: 1.556rem;
       max-width: 300px;
       margin: 0 auto;
-   }
-
+     }
 }
 
 .graphic {
@@ -152,24 +142,20 @@ h2, p {
    color: var(--dark-blue);
 }
 
-
-
-
 @media (min-width: 875px) {
    .desktop-image {
-  display: flex;
-   width: 100%;
-   max-height: 600px;
+    display: flex;
+    width: 100%;
+    max-height: 600px;
 }
 
-.mobile-image {
-   display: none
-}
+   .mobile-image {
+    display: none
+   }
 
-.info {
-  display: flex;
-  align-items: center;
-  
+   .info {
+   display: flex;
+   align-items: center;
   
   img {
      width: 50%;
