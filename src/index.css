@@ -19,7 +19,7 @@ Variables
   --white: hsl(0, 0%, 100%);
 
   --transition: all 0.3s linear;
-  --max-width: 1352px;
+  /* --max-width: 1600px; */
   --font-size: 18px;
 }
 /*
@@ -46,6 +46,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
   line-height: 1.625;
+  /* max-width: var(--max-width);
+  margin: 0 auto; */
 }
 
 ul {
